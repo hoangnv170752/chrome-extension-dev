@@ -1,0 +1,133 @@
+<!--
+ Copyright 2023 Google LLC
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+  -->
+
+  <!doctype html>
+  <html>
+    <head>
+      <title>Bookmark Viewer</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f7f9fc;
+          color: #333;
+          text-align: center;
+          margin: 0;
+          padding: 20px;
+        }
+  
+        #loginForm {
+          max-width: 500px; /* Increased width for longer inputs */
+          margin: 0 auto;
+          padding: 20px;
+          background: #ffffff;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+  
+        .logo {
+          width: 120px; /* Adjust as needed */
+          display: block;
+          margin: 0 auto 20px; /* Centered and spaced from content */
+        }
+  
+        h2 {
+          margin-bottom: 20px;
+          font-size: 24px;
+          color: #007bff;
+        }
+  
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+  
+        label {
+          font-size: 16px;
+          margin-bottom: 8px;
+          text-align: left;
+          width: 100%; /* Full width to align with inputs */
+        }
+  
+        input[type="text"], input[type="password"] {
+          padding: 10px;
+          width: 100%; /* Full width of the form container */
+          max-width: 400px; /* Maximum width to prevent stretching too much */
+          margin-bottom: 20px;
+          border: 1px solid #ced4da;
+          border-radius: 4px;
+          font-size: 16px;
+        }
+  
+        input[type="text"]:focus, input[type="password"]:focus {
+          border-color: #80bdff;
+          outline: none;
+          box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+        }
+  
+        button {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          background-color: #007bff;
+          color: #ffffff;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          width: 100%;
+          max-width: 400px; /* Align with input width */
+        }
+  
+        button:hover {
+          background-color: #0056b3;
+        }
+  
+        .link-container {
+          margin-top: 20px;
+        }
+  
+        .link-container a {
+          color: #007bff;
+          text-decoration: none;
+          font-size: 16px;
+        }
+  
+        .link-container a:hover {
+          text-decoration: underline;
+        }
+      </style>
+      <script src="popup.js" type="module"></script>
+    </head>
+    <body>
+      <div id="loginForm">
+        <img src="./logo-png.png" alt="Logo" class="logo">
+        <h2>Login</h2>
+        <form id="form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Login</button>
+        </form>
+        <div class="link-container">
+          <a href="https://www.google.com" target="_blank">Visit My Website</a>
+        </div>
+      </div>
+    </body>
+  </html>
+  
+  
+  
