@@ -1,11 +1,9 @@
-# chrome.bookmarks
+# chrome.wishguardai
 
-This sample demonstrates using the `chrome.bookmarks` API to search through, add, and delete bookmarks from the user's bookmark tree.
 
 ## Overview
 
-The full bookmark tree is displayed on the extension popup usin `chrome.bookmarks.getTree`.
-`chrome.bookmarks.create`is used to add 'https://www.google.com/' to the user's bookmarks. The `chrome.bookmarks.remove` and `chrome.bookmarks.search` APIs are used to find and delete any bookmarks that match 'https://www.google.com/'.
+To detect the data in the wishlist or remaining carts to get data from user interests
 
 ## Running this extension
 
@@ -15,3 +13,8 @@ The full bookmark tree is displayed on the extension popup usin `chrome.bookmark
 4. Experiment with adding and removing bookmarks using the buttons within the popup.
 
 ## Extensive links for the Chrome extension
+- Handle events: https://developer.chrome.com/docs/extensions/get-started/tutorial/service-worker-events
+
+- Stackoverflow: https://stackoverflow.com/questions/48323692/chrome-extension-to-read-shopping-cart
+
+- Medium: https://medium.com/@mixmav/writing-a-chrome-extension-to-extract-website-data-663a2d75d61a
